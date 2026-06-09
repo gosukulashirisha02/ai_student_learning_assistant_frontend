@@ -3,7 +3,7 @@ import requests
 
 
 
-S_URL="http://127.0.0.1:8000"
+S_URL=st.secrets["S_URL"].rstrip("/")
 
 pdf_tab,web_tab,quiz_tab,summary_tab=st.tabs([
     "📄 PDF Reader","🌐 Web Search","❓quiz generator","📝 PDF Summarizer"
